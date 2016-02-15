@@ -1,0 +1,91 @@
+
+body {
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.1em;
+  margin: 0;
+  color: #2b3132;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: lightgrey;
+}
+
+header{
+  background-color: white;
+  font-family: 'Open Sans', sans-serif;
+  height: 210px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/********************************************
+  NAVIGATION
+*******************************************/
+
+#nav{
+    text-align: center;
+    padding-bottom: 5px;
+    background-color: white;
+    display: row;
+}
+
+#nav ul {
+    list-style: none;
+}
+
+#nav li{
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+#nav a{
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin: 0px 25px;
+    color:  #3a3938;
+    padding-bottom: 8px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+#nav a:after{
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    background: #009f88;
+    height: 2px;
+    bottom: 0;
+    opacity: 0;
+    transition: all .2s;
+    transform: translateY(10px);
+}
+
+#nav a.selected:after, #nav a:hover:after{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+#nav .active {
+    color:  #009f88;
+}
+
+/********************************************
+  CONTENT
+*******************************************/
+
+footer{
+  font-family: 'Open Sans' sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  color: #009f88;
+  position: bottom;
+  bottom: 0;
+  width: 100%
+}

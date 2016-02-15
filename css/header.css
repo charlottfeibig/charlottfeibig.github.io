@@ -1,0 +1,15 @@
+/********************************************
+HEADER
+*******************************************/
+
+#logo {
+  width: 100%;
+  text-align: center;
+  padding-top: 30px;
+  height: 120px;
+  background-color: #fff;
+}
+
+#logo img{
+   width: 150px;
+}

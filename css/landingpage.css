@@ -1,0 +1,77 @@
+/********************************************
+  Landingpage
+*******************************************/
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  color: #2b3132;
+  font-weight: 400;
+  line-height: 20px;
+  background-color: white;
+  text-align: center;
+  justify-content: center;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+.landingpage{
+  padding-top: 7%;
+}
+
+.logo {
+  width: 40%;
+  height:
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#nav_lp {
+    text-align: center;
+    background-color: #009f88;
+    height: 100%;
+    position: fixed;
+    padding-top: 25px;
+    width: 100%;
+}
+
+#nav_lp li{
+    display: inline-block;
+    font-weight: 300;
+}
+
+#nav_lp a{
+    font-family: 'Open Sans' sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    margin: 0px 25px;
+    color: white;
+    padding-bottom: 10px;
+    display: block;
+    position: relative;
+    text-decoration: none;
+}
+
+#nav_lp a:after{
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    background: white;
+    height: 2.5px;
+    bottom: 0;
+    opacity: 0;
+
+    transition: all .2s;
+    transform: translateY(10px);
+}
+
+#nav_lp a.selected:after, #nav_lp a:hover:after{
+    opacity: 1;
+    transform: translateY(0px);
+}
